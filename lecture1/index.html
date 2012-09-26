@@ -2,6 +2,11 @@
 <html>
 	<head>
 		<title>MyApp</title>
+		<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-webapp-status-bar-style" content=”black" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
 	</head>
 	
 	<style type="text/css">
@@ -21,6 +26,19 @@
 			font-weight:200;
 			color:#aaa;
 		}
+		.opacity {
+			opacity:0.5}
+		
+		.button {
+			background:#333;
+			width:100px;
+			color:#fff;
+			height:20px;
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 10px;
+			-khtml-border-radius: 10px;
+			border-radius: 5px;
+			text-align: center;
 	
 	</style>
 	
@@ -35,10 +53,16 @@
 		</ul>
 	
 		<h3>A nice button</h3>
+		<div class="button">Click me</div>
 
 		<h3>An invisible seal</h3>
+		<p><img width="200" class="opacity" src="seal.png" /></p>
 
 		<h3>A video</h3>
+		
+			<video width="900" height=auto controls="controls">
+		  <source src="gizmo.mp4" type="video/mp4" />
+		</video>
 
 		<h3>Two boxes side by side</h3>
 
